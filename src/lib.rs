@@ -4,7 +4,7 @@
 
 use num::Integer;
 
-struct BoundedQueue<const S: usize> {
+pub struct BoundedQueue<const S: usize> {
     values: [usize; S],
     start: usize,
     end: usize,
