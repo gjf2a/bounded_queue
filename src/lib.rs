@@ -4,6 +4,7 @@
 
 use num::Integer;
 
+#[derive(Copy,Clone,Eq,PartialEq,Debug)]
 pub struct BoundedQueue<const S: usize> {
     values: [usize; S],
     start: usize,
